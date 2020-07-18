@@ -56,9 +56,10 @@ define Package/kcptun/Default
   endef
 endef
 
-$(eval $(call Package/kcptun/Default,client))
-$(eval $(call GoBinPackage,kcptun-client))
-$(eval $(call BuildPackage,kcptun-client))
-$(eval $(call Package/kcptun/Default,server))
-$(eval $(call GoBinPackage,kcptun-server))
-$(eval $(call BuildPackage,kcptun-server))
+KCPTUN_COMPONENTS:=client server
+
+$(foreach component,$(KCPTUN_COMPONENTS), \
+  $(eval $(call Package/kcptun/Default,$(component))) \
+  $(eval $(call GoBinPackage,kcptun-$(component))) \
+  $(eval $(call BuildPackage,kcptun-$(component))) \
+)

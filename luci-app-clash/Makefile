@@ -9,7 +9,7 @@ include $(INCLUDE_DIR)/package.mk
 define Package/$(PKG_NAME)
 	SECTION:=luci
 	CATEGORY:=LuCI
-	SUBMENU:=2. Clash
+	SUBMENU:=3. Applications
 	TITLE:=LuCI app for clash
 	DEPENDS:=+luci-base +wget +iptables +coreutils-base64 +coreutils +coreutils-nohup +bash +ipset +libustream-openssl +curl +jsonfilter +ca-certificates +iptables-mod-tproxy +kmod-tun
 	PKGARCH:=all
@@ -131,7 +131,7 @@ define Package/$(PKG_NAME)/install
 	$(INSTALL_DIR) $(1)/usr/share/clash/config/custom
 
 	
-	$(INSTALL_BIN) 	./root/etc/init.d/clash $(1)/etc/init.d/clash
+	$(INSTALL_BIN) ./root/etc/init.d/clash $(1)/etc/init.d/clash
 	$(INSTALL_CONF) ./root/etc/config/clash $(1)/etc/config/clash
 	$(INSTALL_CONF) ./root/etc/clash/Country.mmdb $(1)/etc/clash
 	$(INSTALL_BIN) ./root/usr/share/clash/create/* $(1)/usr/share/clash/create

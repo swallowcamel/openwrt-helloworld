@@ -2,6 +2,7 @@
 
 this applications it's a gift just help you say hello to the world.
 
+<<<<<<< HEAD
 ## luci app list
 - luci-app-clash
 - luci-app-openclash
@@ -12,6 +13,8 @@ this applications it's a gift just help you say hello to the world.
 - luci-app-oaf
 
 
+=======
+>>>>>>> 1c14de31ecd860c7cf21da5b83ae30e3c256f8cb
 All sourcecode from 
 
 https://github.com/Lienol/openwrt-package.git

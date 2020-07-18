@@ -166,4 +166,4 @@ define Package/$(PKG_NAME)/install
 	$(INSTALL_DATA) ./po/zh-cn/clash.zh-cn.lmo $(1)/usr/lib/lua/luci/i18n
 endef
 
-$(eval $(call BuildPackage,$(PKG_NAME)))
+ $(eval $(call BuildPackage,$(PKG_NAME)))

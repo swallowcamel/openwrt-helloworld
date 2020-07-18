@@ -2,7 +2,6 @@
 
 this applications it's a gift just help you say hello to the world.
 
-<<<<<<< HEAD
 ## luci app list
 - luci-app-clash
 - luci-app-openclash
@@ -12,15 +11,12 @@ this applications it's a gift just help you say hello to the world.
 - luci-app-adguardhome
 - luci-app-oaf
 
+## All sourcecode from 
 
-=======
->>>>>>> 1c14de31ecd860c7cf21da5b83ae30e3c256f8cb
-All sourcecode from 
-
-https://github.com/Lienol/openwrt-package.git
-https://github.com/destan19/OpenAppFilter.git
-https://github.com/kenzok8/openwrt-packages.git
-https://github.com/kenzok8/small.git
+- https://github.com/Lienol/openwrt-package.git
+- https://github.com/destan19/OpenAppFilter.git
+- https://github.com/kenzok8/openwrt-packages.git
+- https://github.com/kenzok8/small.git
 
 This source code is only guaranteed to compile successfully on [openwrt v19.07.3](https://github.com/openwrt/openwrt.git), if you are using other source code compilation, error please solve yourself.
 
